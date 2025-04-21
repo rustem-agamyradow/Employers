@@ -1,0 +1,73 @@
+{% extends 'adminn/base/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+<main class="main-wrapper">
+    <div class="main-content">
+        <div class="row row-cols-1 row-cols-xl-12 g-4">
+
+            <div class="card-body">
+                <div class="row row-cols-auto g-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-grd btn-grd-danger px-5">Danger</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-grd btn-grd-success px-5">Success</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-grd btn-grd-warning px-5">Warning</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="fw-bold fs-5">Color Examples Without Icons</p>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="alert alert-border-success alert-dismissible fade show">
+                                <div class="list-group list-group-flush">
+                                    <a href="{% url 'report_user' %}"
+                                        class=" active d-flex align-items-center"><i
+                                            class='bx bxs-inbox me-3 font-20'></i><span>Inbox</span><span
+                                            class="badge bg-primary rounded-pill ms-auto">22</span></a>
+                                </div>
+                            </div>
+                            <div class="alert alert-border-danger alert-dismissible fade show">
+                                <div class="list-group list-group-flush">
+                                    <a href="app-emailbox.html"
+                                        class=" active d-flex align-items-center"><i
+                                            class='bx bxs-inbox me-3 font-20'></i><span>Inbox</span><span
+                                            class="badge bg-primary rounded-pill ms-auto">22</span></a>
+                                </div>
+                            </div>
+                            <div class="alert alert-border-warning alert-dismissible fade show">
+                                <div class="list-group list-group-flush">
+                                    <a href="app-emailbox.html"
+                                        class=" active d-flex align-items-center"><i
+                                            class='bx bxs-inbox me-3 font-20'></i><span>Inbox</span><span
+                                            class="badge bg-primary rounded-pill ms-auto">22</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--end row-->
+    </div>
+</main>
+
+
+
+{% endblock %}
