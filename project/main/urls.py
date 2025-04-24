@@ -20,4 +20,6 @@ urlpatterns = [
 
     
     path('user', views.user, name='user'), 
+    path('user_works', views.user_works, name='user_works'), 
+    path('work_profil', views.work_profil, name='work_profil'), 
 ]

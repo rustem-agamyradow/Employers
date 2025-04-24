@@ -1,4 +1,4 @@
-{% extends 'base/base.html' %}
+{% extends 'adminn/base/base.html' %}
 {% load static %}
 {% block content %}
 
@@ -133,6 +133,42 @@
             </div>
 
         </div><!--end row--> 
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <p class="fw-bold fs-5">Color Examples Without Icons</p>  
+                    <div class="d-flex flex-column gap-2"> 
+                        <div class="alert alert-border-success alert-dismissible fade show">
+                            <div class=""><a href="{% url 'work_user' %}"><p> A simple primary alert—check it out!</p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div></a>  
+                            </div> 
+                        </div>
+                        <div class="alert alert-border-danger alert-dismissible fade show">
+                            <div class="">A simple primary alert—check it out!
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="alert alert-border-warning alert-dismissible fade show">
+                            <div class="">A simple primary alert—check it out!
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 

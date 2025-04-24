@@ -58,8 +58,18 @@ def report_user(request):
 
 
 
+#User
+
 def user(request):
     return render(request, 'user/user_d.html')
+
+
+def user_works(request):
+    return render(request, 'user/user_works.html')
+
+
+def work_profil(request):
+    return render(request, 'user/work_profil.html')
 
 
 # Create your views here.
